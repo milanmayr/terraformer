@@ -66,5 +66,6 @@ func (p *OpsgenieProvider) GetSupportedService() map[string]terraformutils.Servi
 	return map[string]terraformutils.ServiceGenerator{
 		"user": &UserGenerator{},
 		"team": &TeamGenerator{},
+		"heartbeat": &HeartbeatGenerator{},
 	}
 }
